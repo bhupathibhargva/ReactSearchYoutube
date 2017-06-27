@@ -31,6 +31,7 @@ this.setState({videos: videos ,
 );
 });
 }
+//render method using debounce allows us to delay the refresh
 render(){
   const videoSearch = _.debounce(term =>{ this.videoSearch(term)} , 400);
   return (
